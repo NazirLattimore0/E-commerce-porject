@@ -5,24 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="home.css" />
   </head>
   <body>
     <!--  Navbar -->
 
-    <div class="home-banner">
-      <div class="navbar">
-        <img src="fruitlogo.png" alt="logo top left" class="logo" />
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li class="active"><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li class="ctn"><a href="contact.html">Contact</a></li>
+      </ul>
+      <img src="menu-btn.png" alt="" class="menu-btn" />
+    </nav>
 
+    <header>
+      <div class="header-content">
+        <h1>Kozy Collection</h1>
+        <div class="line"></div>
+        <a href="" class="ctn">Learn More</a>
+      </div>
+    </header>
+    <br /><br /><br /><br /><br />
+    <!-- Events -->
     <!-- image slider -->
+    <div class="title">
+      <h1>Upcoming Items</h1>
+      <div class="line"></div>
+    </div>
     <div class="slider">
       <div class="slides">
         <!-- radio button -->
@@ -33,12 +52,91 @@
         <!-- radio btn end -->
         <!-- slide images start here -->
         <div class="slide first">
-          <img src="" alt="" />
+          <img src="TGW-Blue-shirt.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="TGW-truckerhat.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="Belovedblacktee.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="belovedshortsblack.png" alt="" />
         </div>
         <!-- slide images end -->
+        <!-- automatic navigation start -->
+
+        <div class="navigation-auto">
+          <div class="btn1-auto"></div>
+          <div class="btn2-auto"></div>
+          <div class="btn3-auto"></div>
+          <div class="btn4-auto"></div>
+        </div>
+        <!-- automatic nav end -->
       </div>
+      <!-- manual nav start -->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!-- manual navigation end -->
     </div>
+
+    <section class="events">
+      <div class="row">
+        <div class="col">
+          <img src="billionairehoodie.jpeg" alt="" />
+          <h4>New Arrival</h4>
+          <p>
+            The billionaire Studies Full zip hoodie<br />
+            The hottest piece in the game
+          </p>
+          <a href="shop.html" class="ctn">Buy Now</a>
+        </div>
+      </div>
+    </section>
+
     <!-- image slider ends -->
+    <footer class="footer-distributed">
+      <div class="footer-right">
+        <a
+          href="https://www.facebook.com"
+          aria-label="Facebook"
+          class="fa fa-facebook"
+        ></a>
+        <a
+          href="https://twitter.com"
+          aria-label="Twitter"
+          class="fa fa-twitter"
+        ></a>
+        <a
+          href="https://www.instagram.com"
+          aria-label="Instagram"
+          class="fa fa-instagram"
+        ></a>
+        <a
+          href="https://www.snapchat.com"
+          aria-label="Snapchat"
+          class="fa fa-snapchat-ghost"
+        ></a>
+      </div>
+
+      <div class="footer-left">
+        <p class="footer-links">
+          <a class="link-1" href="Home.html">Home</a>
+
+          <a href="about.html">About</a>
+
+          <a href="contact.html">Contact Us</a>
+
+          <a href="shop.html">Shop</a>
+        </p>
+
+        <p>KozyCollection &copy; 2022</p>
+      </div>
+    </footer>
 
     <script src="home.js"></script>
   </body>

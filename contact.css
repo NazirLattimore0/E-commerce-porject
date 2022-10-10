@@ -1,49 +1,42 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #33383b;
+  background-color: #dddddd;
 }
-.home-banner {
-  width: 100%;
-  background-size: cover;
-  background-position: center;
+a {
+  text-decoration: none;
+  color: #000000;
+}
+ul {
+  list-style: none;
 }
 
 .navbar {
+  top: 0;
+  left: 0;
   width: 100%;
-  padding: 0px;
+  padding: 20px;
   display: flex;
-  align-items: center;
-  justify-content: left;
-  background-color: #ffffff;
+  position: absolute;
+  justify-content: space-between;
+  color: whitesmoke;
 }
 .logo {
   width: 80px;
   cursor: pointer;
 }
-.navbar ul li {
-  list-style: none;
-  display: inline-block;
-  margin: 20px;
-  position: relative;
+.nav-links {
+  display: flex;
+  align-items: center;
 }
-.navbar ul li a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  text-transform: uppercase;
+.nav-links li {
+  margin: 0 30px;
 }
-.navbar ul li::after {
-  content: "";
-  height: 3px;
-  width: 0;
-  background: #757c80;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  transition: 0.5s;
-}
-.navbar ul li:hover::after {
-  width: 100%;
+.ctn {
+  padding: 8px 15px;
+  background: red;
+  border-radius: 30px;
+  color: whitesmoke;
 }
 
 .container {
@@ -55,7 +48,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 300px;
   margin-left: 25%;
 }
 .container .content {
@@ -90,7 +83,7 @@ body {
 }
 .content .left-side .details i {
   font-size: 30px;
-  color: rgb(255, 168, 7);
+  color: rgb(198, 0, 0);
   margin-bottom: 10px;
 }
 .content .left-side .details .topic {
@@ -145,12 +138,12 @@ body {
   border: none;
   padding: 8px 16px;
   border-radius: 6px;
-  background: rgb(97, 81, 52);
+  background: rgb(198, 0, 0);
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .button input[type="button"]:hover {
-  background: #f7882f;
+  background: #1ce601;
 }
 
 * {
