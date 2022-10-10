@@ -1,7 +1,6 @@
-// fetch("./product.json") // fetches the Json data
-//   .then((r) => r.json()) // Grabs the objects by doing r.json()
-//   .then((r) => {
-//     // r in this iteration is the objects that we got from r.json()
+// fetches the Json data
+// Grabs the objects by doing r.json()
+
 //     const products = r.products; // We go into r.products which has all of our objects in our JSON file
 //     let productContainer = document.querySelector(".product-container"); // Selects the contianer that will hold all the products
 //     products.forEach((element) => {
@@ -10,14 +9,15 @@
 //     });
 //   });
 
-let http = new XMLHttpRequest();
-http.open("get", "product.json", true);
+let http = new XMLHttpRequest(); // creating a new http request object
+http.open("get", "product.json", true); // first argument 'get' open tag methid
 http.send();
 http.onload = function () {
   if (this.readyState == 4 && this.status == 200) {
     let products = JSON.parse(this.responseText);
-    let output = "";
+    let output = ""; // created this variable
     for (let item of products) {
+      // for of loop for the data
       output += `
             <div class="product">
                <img src="${item.image}" alt="${item.description}">

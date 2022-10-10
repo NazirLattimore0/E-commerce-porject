@@ -343,4 +343,7 @@ p {
   .nav-links li {
     margin: 30px auto;
   }
+  .slider {
+    padding: 0px;
+  }
 }
